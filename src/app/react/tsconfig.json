@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+
+    /** для корректного импорта через import export */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+}
