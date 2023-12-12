@@ -3,7 +3,6 @@ const deps = require('./package.json').dependencies;
 
 module.exports = {
   output: {
-    publicPath: 'http://localhost:4201/',
     uniqueName: 'mdmfprofile',
     scriptType: 'text/javascript',
   },
@@ -11,7 +10,6 @@ module.exports = {
     runtimeChunk: false,
   },
   devServer: {
-    port: 4201,
     headers: {
       'Access-Control-Allow-Origin': '*',
     },

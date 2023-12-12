@@ -6,6 +6,12 @@ module.exports = {
   mode: 'development',
   devServer: {
     port: 4202,
+    proxy: {
+      '/api': {
+        target: 'http://0.0.0.0:4202',
+        pathRewrite: { '^/api': '' },
+      },
+    },
     headers: {
       "Access-Control-Allow-Origin": "*"
     },

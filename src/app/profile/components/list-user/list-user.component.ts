@@ -39,6 +39,9 @@ export class ListUserComponent {
     try {
       // @ts-ignore
       import('list_user/ListUserReactComponent').then(val => {
+        // this.root.render(
+        //   React.createElement(val.ListUserReactComponent, {}),
+        // )
         this.store
           .select<IUser[]>(state => state.users.users)
           .subscribe(users => {
